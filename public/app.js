@@ -26,7 +26,7 @@ tl.fromTo(hero, 1, { height: "0%" }, { height: "100%", ease: Power2.easInout })
     headline,
     1.2,
     { y: "400%" },
-    { y: "-600%", ease: Power2.easInout },
+    { y: "-580%", ease: Power2.easInout },
     "-=1"
   )
   .fromTo(
