@@ -20,6 +20,7 @@ nav {
   min-height: 10vh;
   color: lightblue;
   align-items: center;
+  z-index: 3;
 }
 
 #logo {
@@ -30,4 +31,38 @@ nav {
 i {
   justify-self: end;
   color: grey;
+}
+
+section {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero::after {
+  content: "";
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.3;
+}
+
+.headline {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  font-size: 100px;
+  transform: translate(-20%, -70%);
+  color: lightblue;
+  z-index: 3;
 }
