@@ -1,4 +1,4 @@
 function alert() {
-    console.long("works");
+    console.log("works");
 }
 alert();
