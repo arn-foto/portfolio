@@ -1,4 +1,4 @@
 function alerts() {
-  console.log("Keep going!");
+  console.log("I see you looking in my console!");
 }
 alerts();
