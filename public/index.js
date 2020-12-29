@@ -1,4 +1,4 @@
-function alert() {
-  console.log("Keep going! this is working !");
+function alerts() {
+  console.log("Keep going!");
 }
-alert();
+alerts();
