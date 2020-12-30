@@ -37,18 +37,33 @@
   <body>
     <nav>
       <ul class="links">
-        <h3 id="logo">Anthony R. Navarro | Full Stack Developer</h3>
+        <h3 id="logo">Anthony R. Navarro | Web Developer</h3>
         <ul>
-          <a href="about.html">Who I am.</a>
+          <a href="about.html">About me.</a>
         </ul>
         <ul>
           <a href="projects.html">Projects.</a>
         </ul>
         <ul>
-          <a href="about.html">Contact.</a>
+          <a id="myBtn">Contact.</a>
         </ul>
       </ul>
     </nav>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="contact">
+          <h3>Contact:</h3>
+          <p>Anthony R. Navarro</p>
+          <a
+            href="mailto:foto.arn@gmail.com?subject = Feedback&body = Message"
+            style="color: black"
+          >
+            foto.arn@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
     <script src="../public/ball.js"></script>
     <footer>
       <div class="social-links">
@@ -56,15 +71,15 @@
           <img
             src="../img/linkedin.png"
             alt="linkedin"
-            width="50%"
-            height="50%"
+            width="45%"
+            height="45%"
           />
         </a>
         <a href="https://github.com/arn-foto">
-          <img src="../img/github.png" alt="github" width="50%" height="50%" />
+          <img src="../img/github.png" alt="github" width="45%" height="45%" />
         </a>
         <a href="https://www.instagram.com/anthony.r.navarro/">
-          <img src="../img/insta.png" alt="github" width="50%" height="50%" />
+          <img src="../img/insta.png" alt="github" width="45%" height="45%" />
         </a>
       </div>
     </footer>
