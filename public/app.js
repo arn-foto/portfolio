@@ -8,13 +8,7 @@ const tl = new TimelineMax();
 
 tl.fromTo(hero, 1, { height: "0%" }, { height: "100%", ease: Power2.easInout })
   .fromTo(hero, 1.2, { width: "20%" }, { width: "100%", ease: Power2.easInout })
-  .fromTo(
-    slider,
-    1.2,
-    { x: "-100%" },
-    { x: "0%", ease: Power2.easInout },
-    "-=1"
-  )
+  .fromTo(slider, 1, { x: "-100%" }, { x: "0%", ease: Power2.easInout }, "-=1")
   .fromTo(
     logo,
     0.5,
