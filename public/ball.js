@@ -22,7 +22,7 @@ window.addEventListener("resize", function () {
 var distance = Math.min(200, window.innerWidth / 4);
 var geometry = new THREE.Geometry();
 
-for (var i = 0; i < 2000; i++) {
+for (var i = 0; i < 3000; i++) {
   var vertex = new THREE.Vector3();
 
   var theta = THREE.Math.randFloatSpread(360);
