@@ -1,9 +1,29 @@
 const hero = document.querySelector(".hero");
 const slider = document.querySelector(".slider");
 const logo = document.querySelector("#logo");
+const project = document.querySelector("#project");
+const modal = document.getElementById("myModal");
+const btn = document.getElementById("myBtn");
+const span = document.getElementsByClassName("close")[0];
 
-const headline = document.querySelector(".headline");
+//  Opens "Contact box"
+btn.onclick = function () {
+  modal.style.display = "block";
+};
 
+// Closes "Contact" box
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+// Closes "Contact" box
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+// Animation for links & icons
 const tl = new TimelineMax();
 
 tl.fromTo(hero, 1, { height: "0%" }, { height: "100%", ease: Power2.easInout })
@@ -38,46 +58,3 @@ tl.fromTo(hero, 1, { height: "0%" }, { height: "100%", ease: Power2.easInout })
     { opacity: 1, x: 0, ease: Power2.easInout },
     "-=1"
   );
-
-gsap.registerEffect({
-  name: "fade",
-  defaults: { duration: 2 }, //defaults get applied to the "config" object passed to the effect below
-  effect: (targets, config) => {
-    return gsap.to(targets, { duration: config.duration, opacity: 0 });
-  },
-});
-
-//now we can use it like this:
-//gsap.effects.fade(".box");
-
-document.querySelectorAll(".box").forEach(function (box) {
-  box.addEventListener("mouseenter", function () {
-    gsap.effects.fade(this);
-  });
-});
-
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function () {
-  modal.style.display = "block";
-};
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  modal.style.display = "none";
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};

@@ -175,14 +175,20 @@ section {
   font-size: 1.5rem;
 }
 
-#project a {
+#project img {
   box-shadow: 0px 0px 20px 10px cyan;
   background-color: cyan;
   opacity: 0.9;
   transition: transform 0.2s;
 }
 
-#project a:hover {
+#project img:hover {
   box-shadow: 0px 0px 20px 10px cyan;
   transform: scale(1.1);
+}
+.wordz h1 {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  color: whitesmoke;
 }
