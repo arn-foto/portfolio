@@ -19,7 +19,7 @@ window.addEventListener("resize", function () {
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
 
-var distance = Math.min(200, window.innerWidth / 4);
+var distance = Math.min(175, window.innerWidth / 4);
 var geometry = new THREE.Geometry();
 
 for (var i = 0; i < 2000; i++) {

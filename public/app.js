@@ -30,6 +30,13 @@ tl.fromTo(hero, 1, { height: "0%" }, { height: "100%", ease: Power2.easInout })
     { opacity: 0, x: 30 },
     { opacity: 1, x: 0, ease: Power2.easInout },
     "-=1"
+  )
+  .fromTo(
+    project,
+    0.5,
+    { opacity: 0, x: 30 },
+    { opacity: 1, x: 0, ease: Power2.easInout },
+    "-=1"
   );
 
 gsap.registerEffect({
