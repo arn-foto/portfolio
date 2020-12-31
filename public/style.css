@@ -98,32 +98,6 @@ section {
   opacity: 0.8;
 }
 
-/* #demo {
-  height: 100%;
-  position: relative;
-  display: inline-block;
-}
-.box {
-  width: 300px;
-  height: 300px;
-  position: relative;
-  border-radius: 6px;
-  margin-top: 4px;
-  display: inline-block;
-}
-
-.green {
-  background-color: #6221ac;
-}
-
-.orange {
-  background-color: #3c3c3f;
-}
-.grey {
-  background-color: #8b8b8b;
-} */
-
-/* The Modal (background) */
 .modal {
   display: none;
   position: fixed;
@@ -189,6 +163,6 @@ section {
 .wordz h1 {
   display: flex;
   justify-content: center;
-  padding: 40px;
+  padding: 30px;
   color: whitesmoke;
 }

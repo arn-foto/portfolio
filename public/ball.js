@@ -71,10 +71,10 @@ function onMouseMove(event) {
 animate();
 
 // Scaling animation
-var animProps = { scale: 1, xRot: 0, yRot: 0 };
+var animProps = { scale: 0.6, xRot: 0, yRot: 0 };
 gsap.to(animProps, {
-  duration: 10,
-  scale: 2,
+  duration: 12,
+  scale: 2.5,
   repeat: -1,
   yoyo: true,
   ease: "sine",

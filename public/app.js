@@ -4,6 +4,7 @@ const logo = document.querySelector("#logo");
 const project = document.querySelector("#project");
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("myBtn");
+const project2 = document.querySelector("#project2");
 const span = document.getElementsByClassName("close")[0];
 
 //  Opens "Contact box"
@@ -53,6 +54,13 @@ tl.fromTo(hero, 1, { height: "0%" }, { height: "100%", ease: Power2.easInout })
   )
   .fromTo(
     project,
+    0.5,
+    { opacity: 0, x: 30 },
+    { opacity: 1, x: 0, ease: Power2.easInout },
+    "-=1"
+  )
+  .fromTo(
+    project2,
     0.5,
     { opacity: 0, x: 30 },
     { opacity: 1, x: 0, ease: Power2.easInout },
