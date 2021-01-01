@@ -74,18 +74,6 @@ tl.fromTo(hero, 1, { height: "0%" }, { height: "100%", ease: Power2.easInout })
     "-=1"
   );
 
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 2 || document.documentElement.scrollTop > 2) {
-    document.getElementById("nav").style.top = "0";
-  } else {
-    document.getElementById("nav").style.top = "-5px";
-  }
-}
-
 gsap.registerEffect({
   name: "fade",
   defaults: { duration: 1 },
