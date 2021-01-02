@@ -109,6 +109,15 @@ footer {
   background: linear-gradient(to left, black, grey);
   z-index: -1;
 }
+@media only screen and (max-width: 700px) {
+  .stack img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 60%;
+  }
+}
 
 section {
   display: flex;
