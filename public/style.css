@@ -54,7 +54,7 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 700px) {
   .links {
     display: flex;
     align-items: center;
@@ -143,6 +143,15 @@ section {
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
+@media only screen and (max-width: 700px) {
+  .modal {
+    display: flex;
+    align-items: center;
+    font-size: 7px;
+    width: 90%;
+  }
+}
+
 .modal-content {
   background-color: whitesmoke;
   margin: 15% auto;
@@ -150,6 +159,17 @@ section {
   width: 30%;
   opacity: 0.8;
   box-shadow: 0px 0px 20px 10px cyan;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 7px;
+    padding: 20px;
+    width: 90%;
+  }
 }
 
 .close {
@@ -220,8 +240,17 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .stack img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 60%;
   }
 }
 
@@ -232,12 +261,13 @@ section {
   text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .textheading {
     display: flex;
     align-items: center;
     flex-direction: column;
     font-size: 10px;
     padding: 20px;
+    margin: 5px;
   }
 }
