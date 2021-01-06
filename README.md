@@ -1,1 +1,3 @@
-# Trying my best.
+#deployed - I will always be changing and updating it. It its currently Vanilla Js, Html & Css. I am going to convert the site into React/Redux & styled components.
+
+https://dev-ant.netlify.app/
